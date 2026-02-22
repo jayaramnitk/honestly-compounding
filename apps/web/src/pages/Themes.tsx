@@ -3,7 +3,6 @@ import { useAuth } from "@/contexts/AuthContext";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -81,10 +80,6 @@ export default function Themes() {
 
       {/* Themes List */}
       <Card>
-        <CardHeader>
-          <CardTitle>Themes</CardTitle>
-          <CardDescription>View all available themes</CardDescription>
-        </CardHeader>
         <CardContent>
           {themes.length === 0 ? (
             <div className="text-center py-8 text-gray-500">

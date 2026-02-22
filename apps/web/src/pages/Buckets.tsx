@@ -3,7 +3,6 @@ import { useAuth } from "@/contexts/AuthContext";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -84,10 +83,6 @@ export default function Buckets() {
 
       {/* Buckets List */}
       <Card>
-        <CardHeader>
-          <CardTitle>Buckets</CardTitle>
-          <CardDescription>View all available buckets</CardDescription>
-        </CardHeader>
         <CardContent>
           {buckets.length === 0 ? (
             <div className="text-center py-8 text-gray-500">

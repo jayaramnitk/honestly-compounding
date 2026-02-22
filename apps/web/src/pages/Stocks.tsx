@@ -3,9 +3,6 @@ import { useAuth } from "@/contexts/AuthContext";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -193,12 +190,6 @@ export default function Stocks() {
       </div>
 
       <Card>
-        <CardHeader>
-          <CardTitle>Stock Universe</CardTitle>
-          <CardDescription>
-            Browse all stocks and research documents
-          </CardDescription>
-        </CardHeader>
         <CardContent>
           {stocks.length === 0 ? (
             <div className="text-center py-12">
